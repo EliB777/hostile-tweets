@@ -1,4 +1,5 @@
 class min_word:
+
     def get_min_word(self, text):
         words = text.split()
         min_word = {}

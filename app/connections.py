@@ -35,3 +35,10 @@ class DAL_mongo:
     def close_connection(self):
         if self.client:
             self.client.close()
+
+    def get_all_tweets(self):
+        if not self.client:
+            self.open_connection()
+        db = self.client[self.database]
+        collection = db[self.collection]
+        return collection.find()

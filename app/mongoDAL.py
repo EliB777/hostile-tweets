@@ -7,5 +7,8 @@ collection = db["tweets"]
 documents = collection.find()
 
 
+# def get_all_tweets(self):
+#
+#     return documents
 # for doc in documents:
 #     print(doc)
